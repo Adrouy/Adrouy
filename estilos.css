@@ -1,8 +1,12 @@
 body {
-    background-color: black; /* o #000000, o rgb(0, 0, 0) */
+    background-color: #121212 /*black o #000000, o rgb(0, 0, 0)*/
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    display:grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100vh;
 }
 header {
     /*background-color: black;*/
@@ -31,6 +35,7 @@ main {
 }
 footer {
     /*background-color: black;*/
+    position: fixed; bottom:0; width: 100%
     color: #fff;
     text-align: center;
     padding: 10px;
