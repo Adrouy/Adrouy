@@ -13,6 +13,22 @@
              <li><a href="sobre_mi.html">Sobre mi</a></li>
              <li><a href="contacto.html">Contacto</a></li>
            </ul>
+           <h1>Contador de Visitas</h1>
+            <p>Esta página ha sido visitada <span id="contador">0</span> veces.</p>
+            <script>
+            // Obtener el contador actual almacenado en localStorage
+              let contador = localStorage.getItem('contador');
+
+              // Si no hay contador almacenado, inicializarlo a 0
+              if (!contador) {
+                contador = 0;
+                }
+                // Mostrar el contador en la página
+                document.getElementById('contador').textContent = contador;
+                // Incrementar el contador cuando la página se carga
+                contador++;
+                localStorage.setItem('contador', contador);
+            </script>
          </nav> 
       </header>
       <main>
